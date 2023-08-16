@@ -61,7 +61,7 @@ for (let item of products) {
                             <h1 class="text-4xl font-bold">${item.name}</h1>
                             <h2 class="text-2xl font-bold">Rating <span>${item.rating}</span></h2>
                              <div class="flex w-[100%] justify-between">
-                                 <h1 class="text-3xl "><span class="bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text">Price:</span><span id="price-${item.id}">${item.price}</span></h1>
+                                 <h1 class="text-3xl "><span class="bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text">Price:</span><span class="bg-amber-400 px-4 py-1 rounded-xl" id="price-${item.id}">${item.price}</span></h1>
                                   <div>
                                     <button onClick="apply(${item.id})" id="item-${item.id}" class="bg-gradient-to-r from-purple-500 to-pink-500 px-3 py-2 rounded-sm text-white">Apply</button>
                                   <h3 class="inline"><span class="font-bold">${item.discount}</span>%</h3>
@@ -79,10 +79,7 @@ for (let item of products) {
  
 }
 
- 
-
 function apply(id) {
-    
     const item = document.getElementById(`price-${id}`)
 
     const result = (products[id-1].discount / 100) * products[id-1].price;
