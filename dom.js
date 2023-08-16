@@ -108,9 +108,9 @@ function cartItem(id) {
     hideItem.innerText = increaseValue;
 
     cartDiv.innerHTML = `
-      <div class="flex items-center justify-between mt-4">
-                         <h1 class="text-2xl text-amber-400"><span>${increaseValue}.</span>${products[id-1].name}</h1>
-                          <h3 class="font-bold text-white">${priceItem.innerText}</h3>
+      <div class="flex items-center justify-between mt-4 ">
+                         <h1 class="text-2xl text-white"><span>${increaseValue}.</span>${products[id-1].name}</h1>
+                          <h3 class="font-bold text-amber-400">${priceItem.innerText}</h3>
                       </div>
     
     `;
